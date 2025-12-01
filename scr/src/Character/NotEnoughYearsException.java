@@ -1,3 +1,5 @@
+package Character;
+
 public class NotEnoughYearsException extends Exception {
     public NotEnoughYearsException(String message) {
         super(message);
@@ -5,7 +7,7 @@ public class NotEnoughYearsException extends Exception {
 
     @Override
     public String getMessage() {
-        return "Недостаточно лет службы: " + super.getMessage();
+        return "Кто ты такой??? *принцесса не узнала Ганса, он не достаточно служил* " + super.getMessage();
     }
 }
 

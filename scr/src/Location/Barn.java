@@ -1,3 +1,6 @@
+package Location;
+
+import Character.Character;
 import java.util.Objects;
 
 public class Barn extends Location {

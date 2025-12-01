@@ -1,3 +1,5 @@
+package Character;
+
 public class InvalidAppearanceException extends Exception {
     public InvalidAppearanceException(String message) {
         super(message);

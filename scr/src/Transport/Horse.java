@@ -1,3 +1,5 @@
+package Transport;
+
 import java.util.Objects;
 
 public class Horse extends Animal implements Movable {

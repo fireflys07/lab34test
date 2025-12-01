@@ -1,3 +1,5 @@
+package Transport;
+
 public class TooManyHorsesException extends Exception {
     public TooManyHorsesException(String message) {
         super(message);
@@ -5,7 +7,7 @@ public class TooManyHorsesException extends Exception {
 
     @Override
     public String getMessage() {
-        return "Слишком много лошадей: " + super.getMessage();
+        return "Слишком много лошадей, карета сломалась.. " + super.getMessage();
     }
 }
 

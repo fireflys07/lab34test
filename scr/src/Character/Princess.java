@@ -1,3 +1,5 @@
+package Character;
+
 import java.util.Objects;
 
 public class Princess extends Character {

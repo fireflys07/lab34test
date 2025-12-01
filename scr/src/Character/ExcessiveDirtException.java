@@ -1,3 +1,5 @@
+package Character;
+
 public class ExcessiveDirtException extends Exception {
     public ExcessiveDirtException(String message) {
         super(message);

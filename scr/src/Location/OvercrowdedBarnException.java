@@ -1,3 +1,5 @@
+package Location;
+
 public class OvercrowdedBarnException extends Exception {
     public OvercrowdedBarnException(String message) {
         super(message);
@@ -5,7 +7,7 @@ public class OvercrowdedBarnException extends Exception {
 
     @Override
     public String getMessage() {
-        return "Амбар переполнен: " + super.getMessage();
+        return "В амбаре оказалось слишком много людей..  " + super.getMessage();
     }
 }
 

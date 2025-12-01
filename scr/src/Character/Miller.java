@@ -1,3 +1,5 @@
+package Character;
+
 import java.util.Objects;
 
 public class Miller extends Character {
