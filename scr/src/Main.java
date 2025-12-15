@@ -94,8 +94,14 @@ public class Main {
             try {
                 hans.presentToPrincess();
                 princess.recognize(hans);
-            } catch (ExcessiveDirtException | NotEnoughYearsException e) {
+            } catch (NotEnoughYearsException e) {
+
                 System.out.println("Ошибка при представлении: " + e.getMessage());
+                System.out.println("ГАНС УМЕР ОТ ХОЛОДА И ГОЛОДА");
+            } catch (TooDirtyRuntimeException e) {
+
+
+                System.out.println("КРИТИЧЕСКАЯ ОШИБКА: " + e.getMessage());
                 System.out.println("ГАНС УМЕР ОТ ХОЛОДА И ГОЛОДА");
             }
 

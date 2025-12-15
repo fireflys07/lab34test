@@ -28,7 +28,7 @@ public class Princess extends Character {
         this.statusLevel = statusLevel;
     }
 
-    public void recognize(Gans hans) {
+    /*public void recognize(Gans hans) {
         boolean isClean = hans.isClean();
         boolean servedEnough = hans.servedHonestly();
 
@@ -40,6 +40,14 @@ public class Princess extends Character {
             System.out.println("ПОЗДРАВЛЯЮ! ВЫ ПОЛУЧИЛИ НЕЙТРАЛЬНУЮ КОНЦОВКУ");
         } else {
             System.out.println("ГАНС УМЕР ОТ ХОЛОДА И ГОЛОДА");
+        }
+    }*/
+    public void recognize(Gans hans) {
+        if (!hans.isClean() && hans.servedHonestly()) {
+            System.out.println("Ну ладно, держи лошадь");
+            System.out.println("ПОЗДРАВЛЯЮ! ВЫ ПОЛУЧИЛИ НЕЙТРАЛЬНУЮ КОНЦОВКУ!");
+        } else {
+            System.err.println("Плохая концовка.. ГАНС УМЕР ОТ ХОЛОДА И ГОЛОДА");
         }
     }
 

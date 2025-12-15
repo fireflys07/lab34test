@@ -40,10 +40,12 @@ public class Gans extends Character {
         this.dirtLevel = dirtLevel;
     }
 
-    public void presentToPrincess() throws ExcessiveDirtException, NotEnoughYearsException {
+    public void presentToPrincess() throws NotEnoughYearsException {
+
         if (dirtLevel > 100) {
-            throw new ExcessiveDirtException("Ганс слишком грязный для представления принцессе. Уровень грязи: " + dirtLevel);
+            throw new TooDirtyRuntimeException("Ганс слишком грязный для представления принцессе. Уровень грязи: " + dirtLevel);
         }
+
         if (yearsServed < 7) {
             throw new NotEnoughYearsException("Ганс служил недостаточно долго. Лет службы: " + yearsServed + ", требуется: 7");
         }
